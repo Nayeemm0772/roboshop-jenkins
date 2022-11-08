@@ -5,3 +5,12 @@
     password: Admin123
     url: http://172.31.12.244:8080
     user: Admin
+
+
+- name: Create a multi branch pipeline
+  community.general.jenkins_job:
+    config: "{{ lookup('file', 'templates/mbranch.xml') }}"
+    name: test
+    password: Admin123
+    url: http://172.31.12.244:8080
+    user: Admin
