@@ -19,6 +19,5 @@
 
 - name: include multi branch task file
   ansible.builtin.include_tasks: mbranch.yml
-
   loop:
-    - { name: "cart"}
+    - { name: "ctest"}
